@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">DjangoToDoApp</div>
-        </nav>
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="/"><img src="{% static 'images/checkboxlogo.png' %}" alt=""></a>
+            <a href="/">DjangoToDoApp</a>
+        </div>
+
+        <div class="nav-menu">
+            <a href="/">Início</a>
+            <a href="/">Sobre</a>
+            <a href="/">Como Usar</a>
+        </div>
+        <div class="nav-login">
+            <a href="/">registrar/logar</a>
+        </div>
     </header>
     <main>
-
+        {% block content %}
+        {% endblock content %}
     </main>
     <footer>
 

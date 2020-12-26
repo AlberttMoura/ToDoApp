@@ -28,14 +28,72 @@ body {
 }
 
 
-header {
+header[class="navbar"] {
     grid-area: h;
-    background-color: red;
+    padding: 2vw;
+    background-color: #FF4747;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.nav-logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-logo a{
+    font-size: 6vh;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-logo img {
+    height: 10vh;
+}
+
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    margin-right: 7vw;
+    font-size: 4vh;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #201F21;
+}
+
+.nav-login a{
+    text-decoration: none;
+    font-size: 3vh;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-login a:hover {
+    color: #201F21;
+}
+
+
+
+
+
+
+
+
 
 main {
     grid-area: m;
-    background-color: green;
+    background-color: #f1f1f1;
     min-height: 75vh;
 }
 
