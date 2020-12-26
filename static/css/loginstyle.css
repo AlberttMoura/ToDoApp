@@ -1,0 +1,56 @@
+@font-face {
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-family: "Open Sans";
+}
+
+@font-face {
+    src: url(fonts/Oswald//Oswald-VariableFont_wght.ttf);
+    font-family: "Oswald";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial';
+}
+
+body {
+    background-color: #FF4747;
+    height: 100vh;
+    width: 100vw;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.formulario {
+    border: 2px black solid;
+    border-radius: 12px;
+    width: 40%;
+    height: 70%;
+    background-color: #484848;
+    display: inline;
+    text-align: center;
+
+}
+
+.formulario #top-text {
+    margin: 10px;
+    color: #fff;
+    font-size: 3vw;
+}
+
+.formulario input {
+    justify-self: center;
+    width: 80%;
+    height: 45px;
+    text-align: center;
+    border: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: "Arial";
+    background-color: #212121;
+    color: #fff;
+    border-radius: 10px;
+}
