@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #FF4747;
+    background-color: #212121;
     height: 100vh;
     width: 100vw;
     display: flex;  
@@ -25,10 +25,10 @@ body {
 }
 
 .formulario {
-    border: 2px black solid;
     border-radius: 12px;
+    padding-top: 30px;
     width: 40%;
-    height: 85%;
+    min-height: 80%;
     background-color: #484848;
     display: inline;
     text-align: center;
@@ -62,11 +62,13 @@ body {
     background-color: #303030;
 }
 
-.formulario .warning-off {
-    display: none;
-}
+
 
 .formulario .warning-on {
     text-align: left;
-    color: red;
+    color: #FF7C7C;
+}
+
+.formulario .warning-off {
+    display: none;
 }
