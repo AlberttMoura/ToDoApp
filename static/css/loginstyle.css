@@ -28,11 +28,13 @@ body {
     border: 2px black solid;
     border-radius: 12px;
     width: 40%;
-    height: 70%;
+    height: 85%;
     background-color: #484848;
     display: inline;
     text-align: center;
-
+    box-sizing: border-box;
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 
 .formulario #top-text {
@@ -43,7 +45,7 @@ body {
 
 .formulario input {
     justify-self: center;
-    width: 80%;
+    width: 100%;
     height: 45px;
     text-align: center;
     border: 0;
@@ -53,4 +55,18 @@ body {
     background-color: #212121;
     color: #fff;
     border-radius: 10px;
+    transition: color 0.5s;
+}
+
+.formulario input:hover[id="signup"] {
+    background-color: #303030;
+}
+
+.formulario .warning-off {
+    display: none;
+}
+
+.formulario .warning-on {
+    text-align: left;
+    color: red;
 }

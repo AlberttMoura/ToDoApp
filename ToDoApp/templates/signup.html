@@ -14,12 +14,21 @@
         </div>
         <form action="{% url 'home' %}" method="POST">
             {% csrf_token %}
-            <input type="text" name="name" placeholder="Seu nome" maxlength="20">
+            <input type="text" name="name" placeholder="Seu nome" maxlength="20" autocomplete="off">
+            <p class="warning-off" disabled="true">Nome inválido!</p>
+            <p class="warning-off">*Campo obrigatório!</p>
             <input type="email" name="email" placeholder="Seu E-mail" maxlength="35">
+            <p class="warning-off">*Campo obrigatório!</p>
+            <p class="warning-off">Endereço de E-mail inválido!</p>
             <input type="password" name="password1" placeholder="Sua senha" maxlength="30">
+            <p class="warning-off">*Campo obrigatório!</p>
+            <p class="warning-off">Senha inválida</p>
             <input type="password" name="password2" placeholder="Confirme sua senha" maxlength="30">
-            <input type="submit" name="signup" value="Cadastrar">
+            <p class="warning-off">*Campo obrigatório!</p>
+            <p class="warning-off">As senhas não correspondem</p>
+            <input type="submit" name="signup" value="Cadastrar" id="signup" onclick="cadastro()">
         </form>
     </div>
+    <script src="{% static 'scripts/signup.js' %}"></script>
 </body>
 </html>
